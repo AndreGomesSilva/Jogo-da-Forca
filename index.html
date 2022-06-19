@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Forca</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/forca.css" rel="stylesheet">
+</head>
+<header>
+    <h1 class="text-center">Jogo da Forca</h1>
+</header>
+
+<body>
+    <div id="block-menu" class="container">
+        <div id="menu-start" class="text-center">
+            <button id="btn-start" class="btn btn-primary btn-lg" value="Submit">Iniciar Jogo</button>
+            <p> Adicione mais palavras relacionadas a linguagem de programação</p>
+            <button id="btnAddWord" type="submit" value="submit" class="btn btn-primary">Adicionar Palavra</button>
+            <input id="boxword" type="text" name="addword"> 
+        </div>
+    </div>
+    <div id="block-hang" class="container">
+        <button id="back" class="btn btn-dark">← voltar</button>
+        <div class="float-end"> Erros: <span id="mistakes">0</span> of <span id="maxWrong"></span></div>
+        <div class="container">
+            <canvas id="canvas" width="300" height="300"></canvas>
+        </div>
+        <div class="text-center">
+            <p>Adivinhe a linguagem de Programação</p>
+            <p id="wordSpotlight">The word to be guessed goes here</p>
+            <div id="keyboard"></div>
+            <button class="btn btn-info" onClick="reset()">Resetar</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/hangman.js"></script>
+</body>
+
+</html>
