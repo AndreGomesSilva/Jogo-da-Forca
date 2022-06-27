@@ -11,5 +11,5 @@ Acesse a página [Jogo da Forca](https://andregomessilva.github.io/challenge02/)
 ### Interface
 
 <p align="center">
-  <img align="center" alt="logo" src="doc/static/fotopalantir.png">
+  <img align="center" alt="logo" src="doc/image/jogo_da_forca.png">
 </p>
